@@ -1,0 +1,4 @@
+Parent component [{{parentNum()}}]
+<button (click)="increment()">++</button> | <button (click)="decrement()">--</button>
+<hr>
+<app-model-child [(childNum)]="parentNum" (childNumChange)="numChange($event)"></app-model-child>
